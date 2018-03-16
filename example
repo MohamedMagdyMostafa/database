@@ -1,0 +1,40 @@
+<?php session_start();
+//////////////////////////////////////////////////////////////////
+
+  
+
+//         ||          ||
+//         ||\\      //||
+//         || \\    // ||
+//         ||  \\  //  ||			PHP      	UI/UX
+//         ||   \\//   ||       DEVELOPER   Specialest
+//         ||          ||        
+//         || mohamed  ||     all rights reserved 2017©	
+//         ||  magdy   ||    	mail@mohamed-magdy.com
+//         || mostafa  ||		 
+//         ||          ||
+
+
+
+//////////////////////////////////////////////////////////////////
+
+ $row = $db_class->select('table_name',"WHERE id > 0");
+ $rows = $db_class->selectAll('table_name',"WHERE id > 0");
+ $db_class->delete('table_name',"WHERE id > 0");
+ $rows = $db_class->search('table_name','col','keyword');
+
+ $var = 'string';
+ $data = array('col'=>$var);
+ $db_class->update('table_name',$data,"WHERE id > 0");
+ $id_of_inserted_row = $db_class->insert('table_name',$data);
+
+ $db_class->exportSheet('table_name');
+
+ $db_class->importSql('file_path');
+
+
+foreach ($rows as $row) {
+	# code...
+}
+
+ ?>
