@@ -38,9 +38,9 @@
 
 		  }
 
-		public function importSql(){
+		public function importSql($filename){
 
-						$filename = '../database.sql'; 
+						 
 						$op_data = '';
 						$lines = file($filename);
 						if (!empty($lines)) {
